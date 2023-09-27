@@ -187,18 +187,115 @@ header .header-profile > .avatar-img {
   font-weight: 600;
   color: rgba(59, 12, 59, 0.795);
 }
+/*section projects*/
 
-#section-projects {
+#projects {
   color: rgba(59, 12, 59, 0.795);
   grid-template-rows: auto;
 }
-
-#image-computer {
+.section-projects ul {
+  margin-top: 100px;
+}
+.section-projects > ul li {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  margin-bottom: 10px;
+}
+.section-projects .project-content {
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section-projects ul li + li {
+  margin-top: 50px;
+}
+.project-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#formulario {
-  text-align: center;
+.section-contact {
   color: rgba(24, 8, 24, 0.795);
   background-color: rgba(241, 199, 241, 0.804);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.section-contact > form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 3rem;
+  border-radius: 5px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10rem;
+  margin-top: 5rem;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+form button {
+  align-self: flex-end;
+  border-color: white;
+  border: 5px;
+}
+
+form input,
+textarea {
+  font-size: 1.1rem;
+  padding: 1.6rem;
+  border: 1px solid rgba(59, 12, 59, 0.795);
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/*footer*/
+footer {
+  background-color: rgba(31, 2, 31, 0.795);
+  color: whitesmoke;
+  padding: 0px 6rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.footer-top .footer-top-content {
+  width: 40%;
+}
+.footer-top h4 {
+  margin-bottom: 1.6rem;
+}
+.footer-top p {
+  color: #eee;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.footer-top i {
+  font-size: 1.6rem;
+  padding: 0rem 5px;
+}
+.footer-bottom {
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  padding: 2.6rem 0;
+  font-size: 0.7rem;
+}
+.footer-bottom strong {
+  text-decoration: underline;
 }
