@@ -192,6 +192,9 @@ header .header-profile > .avatar-img {
 #projects {
   color: rgba(59, 12, 59, 0.795);
   grid-template-rows: auto;
+  row-gap: 30px;
+  display: flex;
+  
 }
 .section-projects ul {
   margin-top: 100px;
