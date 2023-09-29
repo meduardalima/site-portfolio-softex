@@ -12,7 +12,7 @@ a {
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr 200px;
+  grid-template-rows: auto 1fr 350px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -71,6 +71,7 @@ h2 {
   font-weight: bold;
   position: relative;
   margin-bottom: 50px;
+  color: rgba(24, 8, 24, 0.795);
 }
 h2::after {
   /*borda que fica abaixo dos títulos*/
@@ -190,14 +191,15 @@ header .header-profile > .avatar-img {
 /*section projects*/
 
 #projects {
-  color: rgba(59, 12, 59, 0.795);
+  /*color: rgba(59, 12, 59, 0.795);*/
   grid-template-rows: auto;
   row-gap: 30px;
   display: flex;
-  
+  color: rgba(24, 8, 24, 0.795);
 }
 .section-projects ul {
   margin-top: 100px;
+  color: rgba(24, 8, 24, 0.795);
 }
 .section-projects > ul li {
   display: grid;
@@ -296,9 +298,77 @@ footer {
   border-top: 1px solid #444;
   display: flex;
   justify-content: center;
-  padding: 2.6rem 0;
+  padding: 1.6rem 0 0;
   font-size: 0.7rem;
 }
 .footer-bottom strong {
   text-decoration: underline;
 }
+/*medium devices (landscape tablets, 768px and up)*/
+@media only screen and (max-widht: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .section {
+    padding: 10rem 1.4rem;
+  }
+  .subtitle {
+    margin: 0px 0px;
+  }
+  header nav {
+    display: none;
+  }
+  header {
+    padding: 0px 2rem;
+  }
+  header .fa {
+    display: block;
+    font-size: 1.8rem;
+    padding: 2.2rem 1rem;
+    align-self: center;
+    cursor: pointer;
+  }
+  .section-home p {
+    margin: 0px;
+  }
+  .section-about-me-content {
+    /* Change number of columns */
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+  .section-projects ul li {
+    /* Change number of columns */
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+  .section-projects .project-content {
+    /* Center objects */
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .section-contact form {
+    padding: 2rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+  .section-contact input,
+  .section-contact textarea {
+    color: #333;
+  }
+  .section-contact button {
+    align-self: stretch;
+    font-size: 0.9rem;
+  }
+  footer {
+    padding: 0px 1.6rem;
+  }
+  footer .footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .footer-top > div:first-child {
+    width: auto;
+  }
+} /*# sourceMappingURL=index.css.map */
