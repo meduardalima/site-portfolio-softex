@@ -1,0 +1,40 @@
+@use "./theme";
+/*section home*/
+.section-home {
+  background: linear-gradient(
+      to right,
+      rgba(203, 135, 203, 0.795),
+      rgba(214, 132, 214, 0.795)
+    ),
+    url(../assets/common-bg.svg); /*gradiente do plano de fundo*/
+  background-position: center;
+  padding-top: 16.5rem !important;
+  padding-bottom: 12rem !important;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 50px; /*espaço entre as linhas*/
+  text-align: center;
+  color: white;
+}
+.section-home {
+  h1 {
+    text-transform: uppercase;
+  }
+  > p {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.6; /*altura(espaço) entre as linhas, como 1.6x o tamanho da fonte*/
+    margin: 0px 50px;
+  }
+  /**.btn {
+    display: flex;
+    justify-content: center;
+  }*/
+  .btn {
+    background-color: white;
+    color: rgba(59, 12, 59, 0.795);
+    padding: 1.4rem 5rem;
+    font-size: 1.1rem;
+  }
+}

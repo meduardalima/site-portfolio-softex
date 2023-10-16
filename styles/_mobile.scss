@@ -1,0 +1,98 @@
+/*medium devices (landscape tablets, 768px and up)*/
+@media screen and (max-widht: 730px) {
+  html {
+    font-size: 13px;
+  }
+  .section {
+    padding: 10rem 1.4rem;
+  }
+  .subtitle {
+    margin: 0px 0px;
+  }
+
+  header {
+    nav {
+      display: none;
+      padding: 1.5rem 4rem;
+    }
+  }
+  nav {
+    .nav-item {
+      display: none;
+    }
+    .mobile-menu-icon {
+      display: block;
+    }
+    .mobile-menu-icon {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  header {
+    padding: 0px 2rem;
+  }
+  .mobile-menu-icon {
+    display: block;
+    font-size: 1.8rem;
+    padding: 2.2rem 1rem;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .section-home {
+    p {
+      margin: 0px;
+    }
+  }
+  .section-about-me-content {
+    /* Change number of columns */
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .section-projects {
+    ul li {
+      /* Change number of columns */
+      grid-template-columns: 1fr;
+      row-gap: 1.6rem;
+    }
+    .project-content {
+      /* Center objects */
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .section-contact {
+    form {
+      padding: 2rem;
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
+      max-width: 100%;
+    }
+
+    input,
+    textarea {
+      color: #333;
+    }
+
+    button {
+      align-self: stretch;
+      font-size: 0.9rem;
+    }
+  }
+  footer {
+    padding: 0px 1.6rem;
+    .footer-top {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+  }
+  .footer-top {
+    > div:first-child {
+      width: auto;
+    }
+  }
+}

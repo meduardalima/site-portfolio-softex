@@ -6,20 +6,16 @@
   list-style: none;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 textarea {
   resize: none;
 }
-
 button {
   border: none;
   outline: inherit;
 }
-
 a {
   text-decoration: none;
   color: rgba(24, 8, 24, 0.795);
@@ -47,7 +43,6 @@ body {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
 }
-
 .btn:hover {
   transform: translateY(-5px);
 }
@@ -58,6 +53,7 @@ body {
   color: rgba(133, 58, 133, 0.795);
   font-size: 1.4rem;
   font-weight: 500;
+
   margin: auto;
   line-height: 1.6;
   text-align: center;
@@ -67,9 +63,9 @@ body {
 .paragraph {
   font-size: 1.2rem;
   color: rgba(133, 58, 133, 0.795);
+
   line-height: 1.7;
 }
-
 section {
   padding: 10rem 5rem;
 }
@@ -81,7 +77,6 @@ h1 {
   text-align: center;
   font-weight: bold;
 }
-
 h2 {
   font-size: 2.6rem;
   text-transform: uppercase;
@@ -92,7 +87,6 @@ h2 {
   margin-bottom: 50px;
   color: rgba(24, 8, 24, 0.795);
 }
-
 h2::after {
   /*borda que fica abaixo dos títulos*/
   content: "";
@@ -110,15 +104,12 @@ h3 {
   font-weight: 700;
   font-size: 1.8rem;
 }
-
 h4 {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/*header*/
-/*header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -129,16 +120,11 @@ header {
   z-index: 1;
   background-color: rgba(133, 58, 133, 0.795);
 }
-
-header .mobile-menu {
-  display: none; /* Ocultar o ícone de menu por padrão em telas maiores */
-}
-
-nav ul {
-  display: flex;
-}
-nav .mobile-menu-icon {
+header .fa {
   display: none;
+}
+nav > ul {
+  display: flex;
 }
 
 nav > ul a {
@@ -148,14 +134,14 @@ nav > ul a {
   text-transform: uppercase;
 }
 nav > ul a:hover {
-  color: rgba(24, 8, 24, 0.795); /*#f0f0f0*/
+  color: #f0f0f0;
 }
-
 .header-profile-container {
   display: flex;
   align-items: center;
-  /*leaving a rounded image*/
 }
+
+/*leaving a rounded image*/
 .header-profile-container .avatar-img {
   width: 3.3rem;
   height: 3.3rem;
@@ -166,11 +152,14 @@ nav > ul a:hover {
 .header-profile-container > span {
   text-transform: uppercase;
 }
-
-/*sections*/
 /*section home*/
 .section-home {
-  background: linear-gradient(to right, rgba(203, 135, 203, 0.795), rgba(214, 132, 214, 0.795)), url(../assets/common-bg.svg); /*gradiente do plano de fundo*/
+  background: linear-gradient(
+      to right,
+      rgba(203, 135, 203, 0.795),
+      rgba(214, 132, 214, 0.795)
+    ),
+    url(../assets/common-bg.svg); /*gradiente do plano de fundo*/
   background-position: center;
   padding-top: 16.5rem !important;
   padding-bottom: 12rem !important;
@@ -181,13 +170,6 @@ nav > ul a:hover {
   text-align: center;
   color: white;
 }
-
-.section-home {
-  /**.btn {
-    display: flex;
-    justify-content: center;
-  }*/
-}
 .section-home h1 {
   text-transform: uppercase;
 }
@@ -197,7 +179,11 @@ nav > ul a:hover {
   line-height: 1.6; /*altura(espaço) entre as linhas, como 1.6x o tamanho da fonte*/
   margin: 0px 50px;
 }
-.section-home .btn {
+.section-home > .btn {
+  display: flex;
+  justify-content: center;
+}
+.section-home > .btn > a {
   background-color: white;
   color: rgba(59, 12, 59, 0.795);
   padding: 1.4rem 5rem;
@@ -205,6 +191,7 @@ nav > ul a:hover {
 }
 
 /*section about me*/
+
 .section-about-me {
   background-color: rgba(241, 199, 241, 0.804);
   display: block;
@@ -216,12 +203,10 @@ nav > ul a:hover {
   margin-top: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*espaço entre as 2 colunas*/
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  -moz-column-gap: 60px; /*espaço entre as 2 colunas*/
+  column-gap: 60px;
   text-align: initial;
 }
-
 .section-about-me-content h3 {
   margin-bottom: 30px;
 }
@@ -240,20 +225,18 @@ nav > ul a:hover {
   font-weight: 600;
   color: rgba(59, 12, 59, 0.795);
 }
-
 /*section projects*/
+
 .section-projects ul {
   margin-top: 100px;
   color: rgba(24, 8, 24, 0.795);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
 .section-projects > ul li {
   display: grid;
   grid-template-columns: 1fr 40%;
-  /*-moz-column-gap: 50px;*/
   -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   margin-bottom: 2px;
 }
 .section-projects .project-content {
@@ -263,16 +246,21 @@ nav > ul a:hover {
   align-items: flex-start;
   justify-content: center;
 }
-
 .section-projects ul li + li {
   margin-top: 50px;
 }
 
 /*section contact*/
+
 .section-contact {
   color: rgba(24, 8, 24, 0.795);
   /*background-color: rgba(241, 199, 241, 0.804);*/
-  background: linear-gradient(to right, rgba(203, 135, 203, 0.795), rgba(241, 199, 241, 0.804)), url(../assets/common-bg.svg);
+  background: linear-gradient(
+      to right,
+      rgba(203, 135, 203, 0.795),
+      rgba(241, 199, 241, 0.804)
+    ),
+    url(../assets/common-bg.svg);
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -289,7 +277,6 @@ nav > ul a:hover {
   margin: 0px 10rem;
   margin-top: 5rem; /*margem superior de 5rem para afastar o formulário do pai*/
 }
-
 form > div {
   display: flex;
   flex-direction: column;
@@ -300,6 +287,7 @@ form label {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
 form button {
   align-self: flex-end;
 }
@@ -316,19 +304,17 @@ textarea {
 }
 
 /*footer*/
-/*footer*/
 footer {
   background-color: rgba(31, 2, 31, 0.795);
   color: whitesmoke;
   padding: 0px 6rem;
 }
-
 .footer-top {
   display: flex;
   justify-content: space-between;
   padding: 4rem 0;
-  /*icon*/
 }
+
 .footer-top .footer-top-content {
   width: 40%;
 }
@@ -344,7 +330,6 @@ footer {
   font-size: 1.6rem;
   padding: 0rem 5px;
 }
-
 .footer-bottom {
   border-top: 1px solid #444;
   display: flex;
@@ -355,9 +340,8 @@ footer {
 .footer-bottom strong {
   text-decoration: underline; /*sublinhado para o texto dentro dos elementos*/
 }
-
 /*medium devices (landscape tablets, 768px and up)*/
-@media screen and (max-widht: 730px) {
+@media only screen and (max-widht: 768px) {
   html {
     font-size: 13px;
   }
@@ -367,25 +351,14 @@ footer {
   .subtitle {
     margin: 0px 0px;
   }
+
   header nav {
     display: none;
-    padding: 1.5rem 4rem;
-  }
-  nav .nav-item {
-    display: none;
-  }
-  nav .mobile-menu-icon {
-    display: block;
-  }
-  nav .mobile-menu-icon {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
   }
   header {
     padding: 0px 2rem;
   }
-  .mobile-menu-icon {
+  header .fa {
     display: block;
     font-size: 1.8rem;
     padding: 2.2rem 1rem;
@@ -415,7 +388,6 @@ footer {
     padding: 2rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
-    max-width: 100%;
   }
   .section-contact input,
   .section-contact textarea {
@@ -436,4 +408,4 @@ footer {
   .footer-top > div:first-child {
     width: auto;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

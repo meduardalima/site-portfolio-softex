@@ -1,0 +1,56 @@
+@use "./theme";
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3rem;
+  font-weight: 700;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(133, 58, 133, 0.795);
+}
+header {
+  .mobile-menu {
+    display: none; /* Ocultar o ícone de menu por padrão em telas maiores */
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+  }
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+nav {
+  > ul a {
+    display: block;
+    padding: 2rem 1.8rem;
+    transition: color 0.2s;
+    text-transform: uppercase;
+
+    &:hover {
+      color: theme.$primary-color; /*#f0f0f0*/
+    }
+  }
+}
+
+.header-profile-container {
+  display: flex;
+  align-items: center;
+
+  /*leaving a rounded image*/
+  .avatar-img {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%; /*torna a borda circular e cria um círculo que corresponde a 50% da altura e largura da imagem*/
+    margin-right: 15px; /*espaçamento de 15px ao lado direito da imagem*/
+    overflow: hidden; /*oculta o conteúdo que ultrapasse os limites da imagem*/
+  }
+  > span {
+    text-transform: uppercase;
+  }
+}

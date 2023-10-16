@@ -1,0 +1,38 @@
+/*footer*/
+footer {
+  background-color: rgba(31, 2, 31, 0.795);
+  color: whitesmoke;
+  padding: 0px 6rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+
+  .footer-top-content {
+    width: 40%;
+  }
+  h4 {
+    margin-bottom: 1.6rem;
+  }
+  p {
+    color: #eee;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  /*icon*/
+  i {
+    font-size: 1.6rem;
+    padding: 0rem 5px;
+  }
+}
+.footer-bottom {
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  padding: 1.6rem 0 0;
+  font-size: 0.7rem;
+  strong {
+    text-decoration: underline; /*sublinhado para o texto dentro dos elementos*/
+  }
+}
